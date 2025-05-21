@@ -10,7 +10,7 @@ nav > a{
     margin: 1vh 1vw;
     color: black;
 }
-nav > a:hover{
+nav > a:hover, .active{
     background-color: black;
     color: rgb(25, 135, 84);
 }
@@ -27,8 +27,9 @@ footer{
     position: fixed;
     left: 0;
     bottom: 0;
+    align-items: center;
 }
-footer > p, article > p{
+footer > p, article > p, li{
     color: white;
 }
 main{
@@ -50,6 +51,7 @@ article{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10vh;
 }
 article > h4{
     color: white;
@@ -57,9 +59,17 @@ article > h4{
 img{
     width: 95%;
 }
+.fish{
+    width: 10vw;
+}
 @media screen and (max-width: 991px) {
     section{
         flex-direction: column;
     }
-
+    
+}
+@media screen and (max-width: 451px) {
+    nav{
+            flex-direction: column;
+    }
 }
